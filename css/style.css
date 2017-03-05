@@ -217,7 +217,7 @@ header p {
 #personal-section {
 	padding: 100px 0;
 	background-color: #f6f6f6;
-	height:95vh;
+	min-height: 95vh;
 }
 #personal-section h4 {
 	border-bottom: 1px solid #b8dea2;
@@ -246,6 +246,7 @@ img.team-img {
 	border: 0;
 	transition: all 0.5s;
 	margin: 0;
+	border-radius: 50%;
 
 }
 #team-section .thumbnail {
@@ -502,4 +503,11 @@ label {
 .hover-bg .hover-text {
 	padding: 15% 10%;
 }
+}
+.large-header {
+background:linear-gradient(to bottom, #0a1535 0%,#103566 37%,#163a75 61%,#0c528e 100%);
+	text-align:center
+}
+#x-canvas{
+opacity:0.5
 }
