@@ -275,6 +275,9 @@ img.team-img {
 	padding-bottom: 10px;
 	display: block;
 }
+.service{
+	min-height:250px;
+}
 /* Gallery Section
 ==============================*/
 #works-section {

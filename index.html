@@ -24,6 +24,12 @@
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script src='https://cdn.rawgit.com/greensock/GreenSock-JS/94c5d3100f78656c3a336ff1080ce22fba63394d/src/uncompressed/TweenMax.js'></script>
+<script src='https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/jquery.gsap.min.js'></script>
+<script src='https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/TweenLite.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-requestAnimationFrame/0.1.2/jquery.requestAnimationFrame.min.js'></script>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <div class="icon">
@@ -59,10 +65,13 @@
 <!-- Header -->
 <header class="text-center" name="home">
 
+  <div class="intro-text">
+    <!-- <div id="large-header" class="large-header">
+      <canvas id="x-canvas"></canvas>
+    </div> -->
   <div class="header">
 
 </div>
-  <div class="intro-text">
     <h1>We are <span class="color">et.simple</span></h1>
     <p>We believe in solutions through compassion</p>
     <div class="clearfix"></div>
@@ -118,13 +127,6 @@
         <h4>Research</h4>
         <p>Our research team goes above and beyond in finding the best solutions for our clients</p>
       </div>
-      <!-- <div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
-        <h4>Marketing</h4>
-        <p>"..."</p>
-      </div> -->
-    </div>
-    <div class="space"></div>
-    <div class="row">
       <div class="col-md-3 col-sm-6 service"> <i class="fa fa-shopping-cart"></i>
         <h4>eCommerce</h4>
         <p>We create smooth and attractive eCommerce applications.</p>
@@ -132,16 +134,9 @@
       <div class="col-md-3 col-sm-6 service"> <i class="fa fa-file-text-o"></i>
         <h4>Content Development</h4>
         <p>Our writing services and content development will take care of all your needs. Check out et.writing service(link?)</p>
-      </div>
-      <!-- <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
-        <h4>Branding</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div> -->
-      <!-- <div class="col-md-3 col-sm-6 service"> <i class="fa fa-camera"></i>
-        <h4>Video & Photography</h4>
-        <p>"..."</p>
-      </div> -->
     </div>
+  </div>
+
   </div>
 </div>
 <!-- Portfolio Section -->
@@ -171,90 +166,71 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/portfolio/twitter-twitch.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Twitter and Twitch Data Visualization</h4>
                 <small>Web Design</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/twitter-twitch-design.png" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="col-sm-6 col-md-3 col-lg-3 app web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/portfolio/vrm.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Visitor Registration Manager</h4>
                 <small>App Development</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/vrm.png" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/portfolio/etymology.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Etymology</h4>
                 <small>Web Design</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/etymology-design.png" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-3 col-lg-3 web app">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/portfolio/hero.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Hero Anywhere</h4>
                 <small>App Development</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/hero.png" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+        <div class="col-sm-6 col-md-3 col-lg-3 app web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/portfolio/grain.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Branding</small>
+                <h4>Grain</h4>
+                <small>App Development</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development, Branding</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/07.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/grain.png" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08.jpg" rel="prettyPhoto">
+            <div class="hover-bg pixelart">
+              <a href="img/portfolio/pixelart.png" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Pixel Art</h4>
                 <small>Web Design</small>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/08.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/pixelart.png" class="img-responsive" alt="Project Title">
+            </a>
+          </div>
           </div>
         </div>
       </div>
@@ -337,8 +313,7 @@
     </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/b7.js"></script>
