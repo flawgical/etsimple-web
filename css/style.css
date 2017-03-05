@@ -214,6 +214,20 @@ header p {
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
+#personal-section {
+	padding: 100px 0;
+	background-color: #f6f6f6;
+	height:95vh;
+}
+#personal-section h4 {
+	border-bottom: 1px solid #b8dea2;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+#personal-section p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
 /* Team Section */
 #team-section {
 	padding: 100px 0;
@@ -439,14 +453,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Social Section */
 #social-section {
 	padding: 30px 0;
-	background-color: #fff;
 }
 #social-section .social ul li {
+	line-height: 60px;
 	display: inline-block;
 	margin: 0 20px;
 }
 #social-section .social i.fa {
-	font-size: 24px;
+	font-size: 48px;
 	padding: 4px 5px;
 	color: #71bd46;
 	transition: all 0.5s;
